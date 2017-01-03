@@ -23,3 +23,15 @@ class ViewController: UIViewController {
 
 }
 
+
+@IBDesignable
+class CornerRadiusView : UIButton {
+    
+    @IBInspectable var cornerRadius: CGFloat = -1
+    
+    override func draw(_ rect: CGRect) {
+        self.layer.cornerRadius = cornerRadius
+        self.layer.masksToBounds = true
+    }
+    
+}

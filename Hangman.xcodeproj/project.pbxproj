@@ -306,6 +306,7 @@
 				4369F06F1E1B65B6003FACCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
