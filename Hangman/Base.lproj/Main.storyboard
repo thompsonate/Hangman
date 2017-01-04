@@ -23,30 +23,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFw-c9-pBu">
-                                <rect key="frame" x="187" y="698" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="guess">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoS-fg-6h7" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
-                                <rect key="frame" x="101.5" y="524" width="117" height="36"/>
-                                <color key="backgroundColor" red="0.78042721748352051" green="0.78041243553161621" blue="0.78042244911193848" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hangman-1" translatesAutoresizingMaskIntoConstraints="NO" id="krY-5V-MMT">
+                                <rect key="frame" x="78.5" y="35" width="163" height="259"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="JoS-fg-6h7" secondAttribute="height" multiplier="65:20" id="Dme-nh-ba9"/>
+                                    <constraint firstAttribute="width" secondItem="krY-5V-MMT" secondAttribute="height" multiplier="438:697" id="huF-7l-g0M"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="guess">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="gHP-LP-oOm">
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66Q-4R-8Y6">
+                                <rect key="frame" x="16" y="304" width="288" height="44"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x0r-ED-JbI" userLabel="Underscores">
+                                        <rect key="frame" x="128.5" y="4.5" width="31" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoJ-gS-fpZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTv-K7-NdP">
+                                                <rect key="frame" x="20.5" y="0.0" width="10.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WFv-EV-EAi" userLabel="Word">
+                                        <rect key="frame" x="126.5" y="8" width="36" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fu-06-BXN">
+                                                <rect key="frame" x="0.0" y="0.0" width="13" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bw-QW-R4U">
+                                                <rect key="frame" x="23" y="0.0" width="13" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="x0r-ED-JbI" firstAttribute="centerY" secondItem="66Q-4R-8Y6" secondAttribute="centerY" constant="-3" id="2RB-5T-wB5"/>
+                                    <constraint firstItem="WFv-EV-EAi" firstAttribute="centerY" secondItem="66Q-4R-8Y6" secondAttribute="centerY" id="R5u-Ef-V2v"/>
+                                    <constraint firstItem="WFv-EV-EAi" firstAttribute="centerX" secondItem="66Q-4R-8Y6" secondAttribute="centerX" id="Ubs-55-Sig"/>
+                                    <constraint firstItem="x0r-ED-JbI" firstAttribute="centerX" secondItem="66Q-4R-8Y6" secondAttribute="centerX" id="jNR-Re-9gn"/>
+                                    <constraint firstAttribute="height" constant="44" id="lOV-L9-lCk"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="gHP-LP-oOm" userLabel="Keyboard">
                                 <rect key="frame" x="16" y="358" width="288" height="160"/>
                                 <subviews>
                                     <view contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="1am-xK-p0U">
@@ -57,7 +87,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0S-YY-AWQ" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.5" width="36" height="35.5"/>
-                                                        <color key="backgroundColor" red="0.77954473350253806" green="0.77954473350253806" blue="0.77954473350253806" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.78042721748352051" green="0.78041243553161621" blue="0.78042244911193848" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="o0S-YY-AWQ" secondAttribute="height" multiplier="1:1" id="oGx-AK-80x"/>
                                                         </constraints>
@@ -65,11 +95,20 @@
                                                         <state key="normal" title="a">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mFw-R4-ZSu"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2s-ZV-AYS" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="42" y="0.0" width="36" height="36.5"/>
@@ -86,6 +125,9 @@
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zmw-T8-oVr"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhM-cn-2O6" userLabel="c" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="84" y="0.5" width="36" height="35.5"/>
@@ -102,6 +144,9 @@
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lDd-A0-9T0"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wM-eN-I4G" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="126" y="0.5" width="36" height="35.5"/>
@@ -118,6 +163,9 @@
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTR-99-7Hz"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUe-6P-MGC" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="168" y="0.0" width="36" height="36.5"/>
@@ -134,6 +182,9 @@
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cWk-0p-GFn"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o60-dx-BjQ" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="210" y="0.5" width="36" height="35.5"/>
@@ -150,6 +201,9 @@
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="unw-9a-WqI"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -178,6 +232,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJU-f0-tEx"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QO0-ml-x7e" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="42" y="0.0" width="36" height="35.5"/>
@@ -194,6 +251,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mtz-ib-DG0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcF-av-oo3" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="84" y="0.0" width="36" height="35.5"/>
@@ -210,6 +270,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZyI-bb-6dI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKO-gA-d1H" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="126" y="0.0" width="36" height="35.5"/>
@@ -226,6 +289,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bXm-eT-BdA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bak-cB-FDk" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="168" y="0.0" width="36" height="35.5"/>
@@ -242,6 +308,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iea-NL-wup"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggd-a9-aCH" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="210" y="0.0" width="36" height="35.5"/>
@@ -258,6 +327,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F4Y-BR-mph"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgX-cW-Smg" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="252" y="0.0" width="36" height="35.5"/>
@@ -274,6 +346,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="37B-j7-2m7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -295,6 +370,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="av7-aV-7X3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jy-Oe-CUl" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="42" y="0.0" width="36" height="35.5"/>
@@ -311,6 +389,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gco-Qd-kZo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yj-19-7Gw" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="84" y="0.0" width="36" height="35.5"/>
@@ -327,6 +408,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="al9-ZV-deq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZT-rf-4kv" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="126" y="0.0" width="36" height="35.5"/>
@@ -343,6 +427,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0aw-qA-a1U"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHf-UZ-yU8" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="168" y="0.0" width="36" height="35.5"/>
@@ -359,6 +446,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5g-DF-m8P"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omz-OQ-bwb" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="210" y="0.0" width="36" height="35.5"/>
@@ -375,6 +465,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h6-ol-PFb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UD-u6-Dhk" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="252" y="0.0" width="36" height="35.5"/>
@@ -391,6 +484,9 @@
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s0x-mm-o5j"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -398,10 +494,10 @@
                                         <rect key="frame" x="0.0" y="124.5" width="288" height="35.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="8IM-yc-AOt">
-                                                <rect key="frame" x="21" y="0.0" width="246" height="36.5"/>
+                                                <rect key="frame" x="21" y="0.0" width="246" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JmW-sS-7mE" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.5" width="36" height="35.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                                         <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="JmW-sS-7mE" secondAttribute="height" multiplier="1:1" id="kSa-EB-9Cu"/>
@@ -415,9 +511,12 @@
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="int-Gt-b8W"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAE-lk-177" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
-                                                        <rect key="frame" x="42" y="0.0" width="36" height="36.5"/>
+                                                        <rect key="frame" x="42" y="0.0" width="36" height="36"/>
                                                         <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="UAE-lk-177" secondAttribute="height" multiplier="1:1" id="6CZ-aB-fIH"/>
@@ -431,9 +530,12 @@
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bRB-l7-ufs"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6k-bj-7pj" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
-                                                        <rect key="frame" x="84" y="0.5" width="36" height="35.5"/>
+                                                        <rect key="frame" x="84" y="0.0" width="36" height="36"/>
                                                         <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="e6k-bj-7pj" secondAttribute="height" multiplier="1:1" id="G2E-5V-Gtu"/>
@@ -447,9 +549,12 @@
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkE-at-aXd"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxc-Gx-giD" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
-                                                        <rect key="frame" x="126" y="0.5" width="36" height="35.5"/>
+                                                        <rect key="frame" x="126" y="0.0" width="36" height="36"/>
                                                         <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Oxc-Gx-giD" secondAttribute="height" multiplier="1:1" id="wLQ-LQ-1YH"/>
@@ -463,9 +568,12 @@
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cok-MU-uqe"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aET-Hd-Exa" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
-                                                        <rect key="frame" x="168" y="0.0" width="36" height="36.5"/>
+                                                        <rect key="frame" x="168" y="0.0" width="36" height="36"/>
                                                         <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="aET-Hd-Exa" secondAttribute="height" multiplier="1:1" id="yeK-Nn-GcM"/>
@@ -479,9 +587,12 @@
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6dU-xd-6nx"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmC-2L-yUu" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
-                                                        <rect key="frame" x="210" y="0.5" width="36" height="35.5"/>
+                                                        <rect key="frame" x="210" y="0.0" width="36" height="36"/>
                                                         <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ZmC-2L-yUu" secondAttribute="height" multiplier="1:1" id="Qfs-CD-mOH"/>
@@ -495,6 +606,9 @@
                                                                 <real key="value" value="7"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BPs-w5-qDY"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -521,21 +635,55 @@
                                     <constraint firstItem="ZmC-2L-yUu" firstAttribute="width" secondItem="KEg-oa-xPS" secondAttribute="width" id="ztA-Xu-vh4"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoS-fg-6h7" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
+                                <rect key="frame" x="101" y="524" width="117" height="36"/>
+                                <color key="backgroundColor" red="0.78042721748352051" green="0.78041243553161621" blue="0.78042244911193848" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JoS-fg-6h7" secondAttribute="height" multiplier="65:20" id="Dme-nh-ba9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="guess">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BDi-ff-MaN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JoS-fg-6h7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0D3-vi-3jM"/>
+                            <constraint firstItem="66Q-4R-8Y6" firstAttribute="top" secondItem="krY-5V-MMT" secondAttribute="bottom" constant="10" id="5Ts-wc-ssK"/>
+                            <constraint firstItem="gHP-LP-oOm" firstAttribute="top" secondItem="66Q-4R-8Y6" secondAttribute="bottom" constant="10" id="6gH-on-EPy"/>
+                            <constraint firstItem="66Q-4R-8Y6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6w2-Zy-IKk"/>
                             <constraint firstItem="JoS-fg-6h7" firstAttribute="top" secondItem="gHP-LP-oOm" secondAttribute="bottom" constant="6" id="7ze-O4-wZl"/>
                             <constraint firstItem="JoS-fg-6h7" firstAttribute="height" secondItem="KEg-oa-xPS" secondAttribute="height" id="I8D-lA-49U"/>
+                            <constraint firstItem="66Q-4R-8Y6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Sgd-ae-CEu"/>
+                            <constraint firstItem="krY-5V-MMT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="V6K-qT-bl2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="66Q-4R-8Y6" secondAttribute="trailing" id="Vjm-6n-IAL"/>
                             <constraint firstItem="gHP-LP-oOm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZRo-9B-Gnh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gHP-LP-oOm" secondAttribute="trailing" id="ezR-95-G0d"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JoS-fg-6h7" secondAttribute="bottom" constant="8" id="jmq-bs-QCK"/>
+                            <constraint firstItem="krY-5V-MMT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mUG-Cy-xTV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hangmanImage" destination="krY-5V-MMT" id="U8p-xg-o7e"/>
+                        <outlet property="underlineStackView" destination="x0r-ED-JbI" id="8cp-GM-dVL"/>
+                        <outlet property="wordStackView" destination="WFv-EV-EAi" id="9ZK-yU-me9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="31.875" y="35.91549295774648"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hangman-1" width="438" height="697"/>
+    </resources>
 </document>

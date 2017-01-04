@@ -10,7 +10,6 @@
 		4369F05C1E1B65B6003FACCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369F05B1E1B65B6003FACCB /* AppDelegate.swift */; };
 		4369F05E1E1B65B6003FACCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369F05D1E1B65B6003FACCB /* ViewController.swift */; };
 		4369F0611E1B65B6003FACCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4369F05F1E1B65B6003FACCB /* Main.storyboard */; };
-		4369F0641E1B65B6003FACCB /* Hangman.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4369F0621E1B65B6003FACCB /* Hangman.xcdatamodeld */; };
 		4369F0661E1B65B6003FACCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4369F0651E1B65B6003FACCB /* Assets.xcassets */; };
 		4369F0691E1B65B6003FACCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4369F0671E1B65B6003FACCB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		4369F05B1E1B65B6003FACCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4369F05D1E1B65B6003FACCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4369F0601E1B65B6003FACCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4369F0631E1B65B6003FACCB /* Hangman.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hangman.xcdatamodel; sourceTree = "<group>"; };
 		4369F0651E1B65B6003FACCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4369F0681E1B65B6003FACCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4369F06A1E1B65B6003FACCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				4369F0651E1B65B6003FACCB /* Assets.xcassets */,
 				4369F0671E1B65B6003FACCB /* LaunchScreen.storyboard */,
 				4369F06A1E1B65B6003FACCB /* Info.plist */,
-				4369F0621E1B65B6003FACCB /* Hangman.xcdatamodeld */,
 			);
 			path = Hangman;
 			sourceTree = "<group>";
@@ -142,7 +139,6 @@
 			files = (
 				4369F05E1E1B65B6003FACCB /* ViewController.swift in Sources */,
 				4369F05C1E1B65B6003FACCB /* AppDelegate.swift in Sources */,
-				4369F0641E1B65B6003FACCB /* Hangman.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +267,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.natethompson.Hangman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -284,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.natethompson.Hangman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -309,19 +307,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		4369F0621E1B65B6003FACCB /* Hangman.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4369F0631E1B65B6003FACCB /* Hangman.xcdatamodel */,
-			);
-			currentVersion = 4369F0631E1B65B6003FACCB /* Hangman.xcdatamodel */;
-			path = Hangman.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 4369F0501E1B65B6003FACCB /* Project object */;
 }
