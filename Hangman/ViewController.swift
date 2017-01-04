@@ -9,30 +9,44 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var hangmanImage: UIImageView!
+    
+    @IBOutlet var letterButtons: [CornerRadiusView]!
     
     override func viewWillAppear(_ animated: Bool) {
         updateWord()
     }
     
     @IBAction func letterButtonPressed(_ button: UIButton) {
-        let buttonTitle = button.titleLabel!.text!
-        let buttonLetter = Character(buttonTitle)
+        if button != lastButtonPressed {
+            button.backgroundColor = .darkGray
         
-        button.backgroundColor = .darkGray
+            if lastButtonPressed != nil {
+                lastButtonPressed?.backgroundColor = #colorLiteral(red: 0.7803230882, green: 0.7804364562, blue: 0.7802982926, alpha: 1)
+            }
         
-        if lastButtonPressed != nil {
-            lastButtonPressed?.backgroundColor = #colorLiteral(red: 0.7803230882, green: 0.7804364562, blue: 0.7802982926, alpha: 1)
+            lastButtonPressed = button
         }
-        lastButtonPressed = button
+    }
+    
+    func visibleCheck() -> Bool {
+        for subview in wordStackView.arrangedSubviews {
+            if let label = subview as? UILabel {
+                if label.alpha == 0 {
+                    return false
+                }
+            }
+        }
+        return true
     }
     
     var lastButtonPressed: UIButton?
     
     
     @IBAction func guessButtonPressed(_ sender: UIButton) {
+        lastButtonPressed?.backgroundColor = #colorLiteral(red: 0.7803230882, green: 0.7804364562, blue: 0.7802982926, alpha: 1)
         var correct = false
-        
         if let guess = lastButtonPressed?.titleLabel?.text {
             for subview in wordStackView.arrangedSubviews {
                 if let label = subview as? UILabel {
@@ -44,7 +58,39 @@ class ViewController: UIViewController {
             }
             if correct == false {
                 wrongGuess()
+            } else {
+                lastButtonPressed?.backgroundColor = .black
+                lastButtonPressed?.isEnabled = false
+                lastButtonPressed = nil
+            }
         }
+        if visibleCheck() {
+            win()
+        } else {
+            if imageNumber == 8 {
+                lose()
+            }
+        }
+    }
+    
+    
+    func win() {
+        updateWord()
+        hangmanImage.image = #imageLiteral(resourceName: "hangman-1")
+        imageNumber = 1
+        for button in letterButtons {
+            button.isEnabled = true
+            button.backgroundColor = #colorLiteral(red: 0.7803230882, green: 0.7804364562, blue: 0.7802982926, alpha: 1)
+        }
+    }
+
+    func lose() {
+        updateWord()
+        hangmanImage.image = #imageLiteral(resourceName: "hangman-1")
+        imageNumber = 1
+        for button in letterButtons {
+            button.isEnabled = true
+            button.backgroundColor = #colorLiteral(red: 0.7803230882, green: 0.7804364562, blue: 0.7802982926, alpha: 1)
         }
     }
     
@@ -52,6 +98,7 @@ class ViewController: UIViewController {
     
     func wrongGuess() {
         lastButtonPressed?.backgroundColor = .black
+        lastButtonPressed?.isEnabled = false
         lastButtonPressed = nil
         
         imageNumber += 1
