@@ -24,13 +24,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hangman-1" translatesAutoresizingMaskIntoConstraints="NO" id="krY-5V-MMT">
-                                <rect key="frame" x="78.5" y="35" width="163" height="259"/>
+                                <rect key="frame" x="78" y="35" width="163" height="259.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="krY-5V-MMT" secondAttribute="height" multiplier="438:697" id="huF-7l-g0M"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66Q-4R-8Y6">
-                                <rect key="frame" x="16" y="304" width="288" height="44"/>
+                                <rect key="frame" x="16" y="304.5" width="288" height="44"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x0r-ED-JbI" userLabel="Underscores">
                                         <rect key="frame" x="128.5" y="4.5" width="31" height="29"/>
@@ -77,7 +77,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="gHP-LP-oOm" userLabel="Keyboard">
-                                <rect key="frame" x="16" y="358" width="288" height="160"/>
+                                <rect key="frame" x="16" y="358.5" width="288" height="160"/>
                                 <subviews>
                                     <view contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="1am-xK-p0U">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="35.5"/>
@@ -87,7 +87,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0S-YY-AWQ" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.5" width="36" height="35.5"/>
-                                                        <color key="backgroundColor" red="0.78042721748352051" green="0.78041243553161621" blue="0.78042244911193848" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089999997" green="0.79920559820000003" blue="0.94689879440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="o0S-YY-AWQ" secondAttribute="height" multiplier="1:1" id="oGx-AK-80x"/>
                                                         </constraints>
@@ -112,7 +112,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2s-ZV-AYS" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="42" y="0.0" width="36" height="36.5"/>
-                                                        <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="z2s-ZV-AYS" secondAttribute="height" multiplier="1:1" id="izS-sI-rdQ"/>
                                                         </constraints>
@@ -131,7 +131,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhM-cn-2O6" userLabel="c" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="84" y="0.5" width="36" height="35.5"/>
-                                                        <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="PhM-cn-2O6" secondAttribute="height" multiplier="1:1" id="in3-0e-TK7"/>
                                                         </constraints>
@@ -150,7 +150,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wM-eN-I4G" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="126" y="0.5" width="36" height="35.5"/>
-                                                        <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="5wM-eN-I4G" secondAttribute="height" multiplier="1:1" id="RcI-gL-i5D"/>
                                                         </constraints>
@@ -169,7 +169,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUe-6P-MGC" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="168" y="0.0" width="36" height="36.5"/>
-                                                        <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="tUe-6P-MGC" secondAttribute="height" multiplier="1:1" id="S05-Cm-EOZ"/>
                                                         </constraints>
@@ -188,7 +188,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o60-dx-BjQ" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="210" y="0.5" width="36" height="35.5"/>
-                                                        <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="o60-dx-BjQ" secondAttribute="height" multiplier="1:1" id="IK5-uM-4lJ"/>
                                                         </constraints>
@@ -219,7 +219,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEg-oa-xPS" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="KEg-oa-xPS" secondAttribute="height" multiplier="1:1" id="Aa7-O5-7aT"/>
                                                 </constraints>
@@ -238,7 +238,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QO0-ml-x7e" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="42" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="QO0-ml-x7e" secondAttribute="height" multiplier="1:1" id="Cfn-fO-Luc"/>
                                                 </constraints>
@@ -257,7 +257,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcF-av-oo3" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="84" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="HcF-av-oo3" secondAttribute="height" multiplier="1:1" id="KKm-He-oAc"/>
                                                 </constraints>
@@ -276,7 +276,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKO-gA-d1H" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="126" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="NKO-gA-d1H" secondAttribute="height" multiplier="1:1" id="6hM-KR-p3U"/>
                                                 </constraints>
@@ -295,7 +295,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bak-cB-FDk" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="168" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Bak-cB-FDk" secondAttribute="height" multiplier="1:1" id="Laz-69-Piu"/>
                                                 </constraints>
@@ -314,7 +314,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggd-a9-aCH" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="210" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ggd-a9-aCH" secondAttribute="height" multiplier="1:1" id="niA-nf-LX6"/>
                                                 </constraints>
@@ -333,7 +333,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgX-cW-Smg" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="252" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="JgX-cW-Smg" secondAttribute="height" multiplier="1:1" id="RvF-ov-7Zv"/>
                                                 </constraints>
@@ -357,7 +357,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d2-zq-7UN" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8d2-zq-7UN" secondAttribute="height" multiplier="1:1" id="4gk-Q7-u1D"/>
                                                 </constraints>
@@ -376,7 +376,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jy-Oe-CUl" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="42" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8Jy-Oe-CUl" secondAttribute="height" multiplier="1:1" id="RrS-bW-t7O"/>
                                                 </constraints>
@@ -395,7 +395,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yj-19-7Gw" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="84" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="9Yj-19-7Gw" secondAttribute="height" multiplier="1:1" id="kXu-FR-U8c"/>
                                                 </constraints>
@@ -414,7 +414,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZT-rf-4kv" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="126" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="oZT-rf-4kv" secondAttribute="height" multiplier="1:1" id="hVF-eQ-5hb"/>
                                                 </constraints>
@@ -433,7 +433,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHf-UZ-yU8" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="168" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="pHf-UZ-yU8" secondAttribute="height" multiplier="1:1" id="G90-da-n7Y"/>
                                                 </constraints>
@@ -452,7 +452,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omz-OQ-bwb" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="210" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Omz-OQ-bwb" secondAttribute="height" multiplier="1:1" id="OLV-i3-QyT"/>
                                                 </constraints>
@@ -471,7 +471,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UD-u6-Dhk" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                 <rect key="frame" x="252" y="0.0" width="36" height="35.5"/>
-                                                <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="6UD-u6-Dhk" secondAttribute="height" multiplier="1:1" id="H5X-AG-Auv"/>
                                                 </constraints>
@@ -498,7 +498,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JmW-sS-7mE" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
-                                                        <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="JmW-sS-7mE" secondAttribute="height" multiplier="1:1" id="kSa-EB-9Cu"/>
                                                         </constraints>
@@ -517,7 +517,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAE-lk-177" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="42" y="0.0" width="36" height="36"/>
-                                                        <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="UAE-lk-177" secondAttribute="height" multiplier="1:1" id="6CZ-aB-fIH"/>
                                                         </constraints>
@@ -536,7 +536,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6k-bj-7pj" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="84" y="0.0" width="36" height="36"/>
-                                                        <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="e6k-bj-7pj" secondAttribute="height" multiplier="1:1" id="G2E-5V-Gtu"/>
                                                         </constraints>
@@ -555,7 +555,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxc-Gx-giD" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="126" y="0.0" width="36" height="36"/>
-                                                        <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Oxc-Gx-giD" secondAttribute="height" multiplier="1:1" id="wLQ-LQ-1YH"/>
                                                         </constraints>
@@ -574,7 +574,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aET-Hd-Exa" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="168" y="0.0" width="36" height="36"/>
-                                                        <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="aET-Hd-Exa" secondAttribute="height" multiplier="1:1" id="yeK-Nn-GcM"/>
                                                         </constraints>
@@ -593,7 +593,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmC-2L-yUu" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
                                                         <rect key="frame" x="210" y="0.0" width="36" height="36"/>
-                                                        <color key="backgroundColor" red="0.77954473349999998" green="0.77954473349999998" blue="0.77954473349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ZmC-2L-yUu" secondAttribute="height" multiplier="1:1" id="Qfs-CD-mOH"/>
                                                         </constraints>
@@ -635,9 +635,28 @@
                                     <constraint firstItem="ZmC-2L-yUu" firstAttribute="width" secondItem="KEg-oa-xPS" secondAttribute="width" id="ztA-Xu-vh4"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ded-Mh-lJk" userLabel="Update Word Button" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
+                                <rect key="frame" x="102" y="249" width="115" height="35.5"/>
+                                <color key="backgroundColor" red="0.68077007089999997" green="0.79920559820000003" blue="0.94689879440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ded-Mh-lJk" secondAttribute="height" multiplier="65:20" id="giC-sS-HXC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="ok">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="updateWordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pt6-7f-AYb"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoS-fg-6h7" customClass="CornerRadiusView" customModule="Hangman" customModuleProvider="target">
-                                <rect key="frame" x="101" y="524" width="117" height="36"/>
-                                <color key="backgroundColor" red="0.78042721748352051" green="0.78041243553161621" blue="0.78042244911193848" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="102" y="524.5" width="115" height="35.5"/>
+                                <color key="backgroundColor" red="0.68077007089491248" green="0.79920559815939185" blue="0.94689879441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JoS-fg-6h7" secondAttribute="height" multiplier="65:20" id="Dme-nh-ba9"/>
                                 </constraints>
@@ -663,18 +682,22 @@
                             <constraint firstItem="66Q-4R-8Y6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6w2-Zy-IKk"/>
                             <constraint firstItem="JoS-fg-6h7" firstAttribute="top" secondItem="gHP-LP-oOm" secondAttribute="bottom" constant="6" id="7ze-O4-wZl"/>
                             <constraint firstItem="JoS-fg-6h7" firstAttribute="height" secondItem="KEg-oa-xPS" secondAttribute="height" id="I8D-lA-49U"/>
+                            <constraint firstItem="ded-Mh-lJk" firstAttribute="height" secondItem="KEg-oa-xPS" secondAttribute="height" id="M7w-tD-GGI"/>
+                            <constraint firstItem="ded-Mh-lJk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OBO-Fs-2tI"/>
+                            <constraint firstItem="66Q-4R-8Y6" firstAttribute="top" secondItem="ded-Mh-lJk" secondAttribute="bottom" constant="20" id="Pld-x8-mht"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JoS-fg-6h7" secondAttribute="bottom" constant="8" id="QxH-qZ-Fe8"/>
                             <constraint firstItem="66Q-4R-8Y6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Sgd-ae-CEu"/>
-                            <constraint firstItem="krY-5V-MMT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="V6K-qT-bl2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="66Q-4R-8Y6" secondAttribute="trailing" id="Vjm-6n-IAL"/>
                             <constraint firstItem="gHP-LP-oOm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZRo-9B-Gnh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gHP-LP-oOm" secondAttribute="trailing" id="ezR-95-G0d"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JoS-fg-6h7" secondAttribute="bottom" constant="8" id="jmq-bs-QCK"/>
+                            <constraint firstItem="krY-5V-MMT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="hGX-TW-gMR"/>
                             <constraint firstItem="krY-5V-MMT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mUG-Cy-xTV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="hangmanImage" destination="krY-5V-MMT" id="U8p-xg-o7e"/>
                         <outlet property="underlineStackView" destination="x0r-ED-JbI" id="8cp-GM-dVL"/>
+                        <outlet property="updateWordButton" destination="ded-Mh-lJk" id="8Sf-Um-tIW"/>
                         <outlet property="wordStackView" destination="WFv-EV-EAi" id="9ZK-yU-me9"/>
                         <outletCollection property="letterButtons" destination="o0S-YY-AWQ" collectionClass="NSMutableArray" id="3YX-jB-gxD"/>
                         <outletCollection property="letterButtons" destination="z2s-ZV-AYS" collectionClass="NSMutableArray" id="aNR-3w-QCN"/>
