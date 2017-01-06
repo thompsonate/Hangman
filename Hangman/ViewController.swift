@@ -14,37 +14,16 @@ class ViewController: UIViewController {
     
     @IBOutlet var letterButtons: [CornerRadiusView]!
     
+    var lastButtonPressed: UIButton?
+    
     override func viewWillAppear(_ animated: Bool) {
         updateWord()
     }
     
     @IBAction func letterButtonPressed(_ button: UIButton) {
         if button != lastButtonPressed {
-            button.backgroundColor = #colorLiteral(red: 0.4510363936, green: 0.5568681955, blue: 0.6684871912, alpha: 1)
-        
-            if lastButtonPressed != nil {
-                lastButtonPressed?.backgroundColor = #colorLiteral(red: 0.6500415206, green: 0.80372715, blue: 0.9613605142, alpha: 1)
-            }
-        
             lastButtonPressed = button
         }
-    }
-    
-    func visibleCheck() -> Bool {
-        for subview in wordStackView.arrangedSubviews {
-            if let label = subview as? UILabel {
-                if label.alpha == 0 {
-                    return false
-                }
-            }
-        }
-        return true
-    }
-    
-    var lastButtonPressed: UIButton?
-    
-    
-    @IBAction func guessButtonPressed(_ sender: UIButton) {
         lastButtonPressed?.backgroundColor = #colorLiteral(red: 0.6500415206, green: 0.80372715, blue: 0.9613605142, alpha: 1)
         var correct = false
         if let guess = lastButtonPressed?.titleLabel?.text {
@@ -67,25 +46,45 @@ class ViewController: UIViewController {
         if visibleCheck() {
             win()
         } else {
-            if imageNumber == 8 {
+            if imageNumber == 7 {
                 lose()
             }
         }
     }
     
-    @IBOutlet weak var updateWordView: UIView!
+    func visibleCheck() -> Bool {
+        for subview in wordStackView.arrangedSubviews {
+            if let label = subview as? UILabel {
+                if label.alpha == 0 {
+                    return false
+                }
+            }
+        }
+        return true
+    }
     
     func win() {
         hangmanImage.image = UIImage(named: "win-\(imageNumber)")
         updateWordButton.isHidden = false
+        for button in letterButtons {
+            button.isEnabled = false
+        }
     }
 
     func lose() {
-        hangmanImage.image = #imageLiteral(resourceName: "lose")
+        hangmanImage.image = #imageLiteral(resourceName: "lose-1")
         updateWordButton.isHidden = false
+        updateWordButton.isEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+            self.hangmanImage.image = #imageLiteral(resourceName: "lose-2")
+            self.updateWordButton.isEnabled = true
+        })
+        for button in letterButtons {
+            button.isEnabled = false
+        }
         for subview in wordStackView.arrangedSubviews {
             if let label = subview as? UILabel {
-                label.alpha = 0
+                label.alpha = 1
             }
         }
     }
@@ -107,7 +106,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var updateWordButton: CornerRadiusView!
     
     func updateWord() {
-        let wordList = ["hangman", "apps", "carl"]
+    
+        func wordList() -> [String]? {
+            guard let url = Bundle.main.url(forResource: "wordList", withExtension: "txt") else {
+                return nil
+            }
+            let content = try! String(contentsOf: url)
+            return content.components(separatedBy: "\n")
+        }
         
         imageNumber = 1
         hangmanImage.image = #imageLiteral(resourceName: "hangman-1")
@@ -118,15 +124,10 @@ class ViewController: UIViewController {
         
         updateWordButton.isHidden = true
         
-//        for subview in updateWordView.subviews {
-//            if let button = subview as? UIButton {
-//                button.isHidden = true
-//                button.alpha = 0
-//            }
-//        }
+        guard let words = wordList() else { return }
         
-        let randomIndex = Int(arc4random_uniform(UInt32(wordList.count)))
-        var word = (wordList[randomIndex])
+        let randomIndex = Int(arc4random_uniform(UInt32((words.count))))
+        var word = (words[randomIndex])
         
         //remove existing labels
         for label in wordStackView.arrangedSubviews {
