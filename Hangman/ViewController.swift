@@ -73,11 +73,9 @@ class ViewController: UIViewController {
 
     func lose() {
         hangmanImage.image = #imageLiteral(resourceName: "lose-1")
-        updateWordButton.isHidden = false
-        updateWordButton.isEnabled = false
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
             self.hangmanImage.image = #imageLiteral(resourceName: "lose-2")
-            self.updateWordButton.isEnabled = true
+            self.updateWordButton.isHidden = false
         })
         for button in letterButtons {
             button.isEnabled = false
